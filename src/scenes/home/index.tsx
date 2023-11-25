@@ -8,6 +8,7 @@ import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
+import SponsorGatorade from "@/assets/Gatorade.png"
 import { motion } from "framer-motion";
 
 
@@ -70,7 +71,7 @@ const index = ({setSelectedPage}: Props) => {
                     <AnchorLink
                         className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
                         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-                        href={`#${SelectedPage.ContactUs}`}
+                        href={`#${SelectedPage.OurClasses}`}
                     >
                         <p>Learn More</p>
                     </AnchorLink>
@@ -90,7 +91,8 @@ const index = ({setSelectedPage}: Props) => {
                     <div className="flex w-3/5 items-center justify-between gap-8">
                         <img alt="redbull-sponsor" src={SponsorRedBull} />
                         <img alt="forbes-sponsor" src={SponsorForbes} />
-                        <img alt="fortune-sponsor" src={SponsorFortune} />
+                        <img alt="fortune-sponsor" src={SponsorFortune} /> 
+                        <img alt="gatorade-sponsor" src={SponsorGatorade} />
                     </div>
                 </div>
             </div>
